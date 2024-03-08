@@ -1,0 +1,45 @@
+.main_container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* Simplified version of your grid-template-columns */
+    grid-template-rows: repeat(8, 1fr); /* Simplified version of your grid-template-rows */
+}
+
+.h1 {
+    grid-column: 1 / -1; /* Span the title across all columns */
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 100px;
+    
+}
+
+.link_container {
+    margin: 25px;
+    display: grid;
+    grid-column: 1 / -1; /* Span the container across all columns */
+    grid-template-columns: repeat(3, 1fr); /* Adjust this to fit the number of links you have */
+    grid-auto-rows: auto; /* Automatically adjust the row height */
+    justify-content: center; /* Center the items horizontally */
+    gap: 20px; /* Add some space between the grid items */
+}
+
+.link {
+    /* Center the link text */
+    display: block;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal; /* Make the link fill the grid cell for better clickability */
+}
+
+p{
+
+font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    
+
+    
+}
+
